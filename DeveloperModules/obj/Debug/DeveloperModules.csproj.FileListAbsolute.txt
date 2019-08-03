@@ -1,0 +1,8 @@
+D:\His\HisDev\DeveloperModules\obj\Debug\DeveloperModules.csprojAssemblyReference.cache
+D:\His\HisDev\DeveloperModules\obj\Debug\Views\NotifyShow.baml
+D:\His\HisDev\DeveloperModules\obj\Debug\Views\PartientContructionInformation2.baml
+D:\His\HisDev\DeveloperModules\obj\Debug\Views\ViewMain.baml
+D:\His\HisDev\DeveloperModules\obj\Debug\Views\NotifyShow.g.cs
+D:\His\HisDev\DeveloperModules\obj\Debug\Views\PartientContructionInformation2.g.cs
+D:\His\HisDev\DeveloperModules\obj\Debug\Views\ViewMain.g.cs
+D:\His\HisDev\DeveloperModules\obj\Debug\DeveloperModules_MarkupCompile.cache

@@ -1,0 +1,174 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\His\\HisDev\\DeveloperProduct\\DeveloperProduct.csproj": {}
+  },
+  "projects": {
+    "D:\\His\\HisDev\\Datas\\Datas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\His\\HisDev\\Datas\\Datas.csproj",
+        "projectName": "Datas",
+        "projectPath": "D:\\His\\HisDev\\Datas\\Datas.csproj"
+      },
+      "frameworks": {
+        "net46": {}
+      }
+    },
+    "D:\\His\\HisDev\\DeveloperModules\\DeveloperModules.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\His\\HisDev\\DeveloperModules\\DeveloperModules.csproj",
+        "projectName": "DeveloperModules",
+        "projectPath": "D:\\His\\HisDev\\DeveloperModules\\DeveloperModules.csproj",
+        "packagesPath": "C:\\Users\\BUI DAI\\.nuget\\packages\\",
+        "outputPath": "D:\\His\\HisDev\\DeveloperModules\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\BUI DAI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\DevExpress\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {
+              "D:\\His\\HisDev\\Datas\\Datas.csproj": {
+                "projectPath": "D:\\His\\HisDev\\Datas\\Datas.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Oracle.ManagedDataAccess": {
+              "target": "Package",
+              "version": "[19.3.0, )"
+            },
+            "Oracle.ManagedDataAccess.EntityFramework": {
+              "target": "Package",
+              "version": "[19.3.0, )"
+            },
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[7.1.0.431, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\His\\HisDev\\DeveloperProduct\\DeveloperProduct.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\His\\HisDev\\DeveloperProduct\\DeveloperProduct.csproj",
+        "projectName": "DeveloperProduct",
+        "projectPath": "D:\\His\\HisDev\\DeveloperProduct\\DeveloperProduct.csproj",
+        "packagesPath": "C:\\Users\\BUI DAI\\.nuget\\packages\\",
+        "outputPath": "D:\\His\\HisDev\\DeveloperProduct\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\BUI DAI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\DevExpress\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {
+              "D:\\His\\HisDev\\Datas\\Datas.csproj": {
+                "projectPath": "D:\\His\\HisDev\\Datas\\Datas.csproj"
+              },
+              "D:\\His\\HisDev\\DeveloperModules\\DeveloperModules.csproj": {
+                "projectPath": "D:\\His\\HisDev\\DeveloperModules\\DeveloperModules.csproj"
+              },
+              "D:\\His\\HisDev\\Until\\Until.csproj": {
+                "projectPath": "D:\\His\\HisDev\\Until\\Until.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Oracle.ManagedDataAccess": {
+              "target": "Package",
+              "version": "[19.3.0, )"
+            },
+            "Oracle.ManagedDataAccess.EntityFramework": {
+              "target": "Package",
+              "version": "[19.3.0, )"
+            },
+            "Prism.Unity": {
+              "target": "Package",
+              "version": "[7.1.0.431, )"
+            },
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[7.1.0.431, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\His\\HisDev\\Until\\Until.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\His\\HisDev\\Until\\Until.csproj",
+        "projectName": "Until",
+        "projectPath": "D:\\His\\HisDev\\Until\\Until.csproj"
+      },
+      "frameworks": {
+        "net46": {}
+      }
+    }
+  }
+}

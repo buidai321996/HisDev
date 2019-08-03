@@ -1,0 +1,14 @@
+D:\His\HisDev\Until\bin\Debug\Until.dll.config
+D:\His\HisDev\Until\bin\Debug\Until.dll
+D:\His\HisDev\Until\bin\Debug\Until.pdb
+D:\His\HisDev\Until\bin\Debug\EntityFramework.dll
+D:\His\HisDev\Until\bin\Debug\EntityFramework.SqlServer.dll
+D:\His\HisDev\Until\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\His\HisDev\Until\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+D:\His\HisDev\Until\bin\Debug\EntityFramework.xml
+D:\His\HisDev\Until\bin\Debug\EntityFramework.SqlServer.xml
+D:\His\HisDev\Until\obj\Debug\Until.csprojAssemblyReference.cache
+D:\His\HisDev\Until\obj\Debug\Until.csproj.CoreCompileInputs.cache
+D:\His\HisDev\Until\obj\Debug\Until.csproj.CopyComplete
+D:\His\HisDev\Until\obj\Debug\Until.dll
+D:\His\HisDev\Until\obj\Debug\Until.pdb

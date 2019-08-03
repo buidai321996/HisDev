@@ -1,0 +1,4 @@
+D:\His\HisDev\DeveloperProduct\obj\Debug\DeveloperProduct.csprojAssemblyReference.cache
+D:\His\HisDev\DeveloperProduct\obj\Debug\App.g.cs
+D:\His\HisDev\DeveloperProduct\obj\Debug\DeveloperProduct_Content.g.cs
+D:\His\HisDev\DeveloperProduct\obj\Debug\DeveloperProduct_MarkupCompile.cache
