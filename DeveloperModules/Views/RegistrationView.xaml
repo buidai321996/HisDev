@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="DeveloperModules.Views.RegistrationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             prism:ViewModelLocator.AutoWireViewModel="True" Height="Auto" Width="Auto" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="10*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="name"></Label>
+        <dxe:TextEdit Grid.Row="0" Grid.Column="1" Text="{Binding StudentData.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></dxe:TextEdit>
+        <Label Grid.Row="2" Grid.Column="0" Content="Age"></Label>
+        <dxe:TextEdit Grid.Row="2" Grid.Column="1" Text="{Binding StudentData.Age,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></dxe:TextEdit>
+        <Label Grid.Row="4" Grid.Column="0" Content="ClassName"></Label>
+        <dxe:TextEdit Grid.Row="4" Grid.Column="1" Text="{Binding StudentData.ClassName,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></dxe:TextEdit>
+        <Label Grid.Row="6" Grid.Column="0" Content="Description"></Label>
+        <dxe:TextEdit Grid.Row="6" Grid.Column="1" Text="{Binding StudentData.Description ,Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" ></dxe:TextEdit>
+        <dx:SimpleButton Content="Update" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Center" Margin="10,0,0,0" Command="{Binding  UpdateDelegateCommand}" ></dx:SimpleButton>
+
+    </Grid>
+</UserControl>

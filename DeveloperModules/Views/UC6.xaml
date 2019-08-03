@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="DeveloperModules.Views.UC6"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:dxdo="http://schemas.devexpress.com/winfx/2008/xaml/docking"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <dxdo:LayoutPanel ItemWidth="*" MinWidth="240" ShowCaption="False">
+                <dxg:GridControl MaxHeight="1200">
+                    <dxg:GridControl.View>
+                        <dxg:TableView ShowGroupPanel="False"></dxg:TableView>
+                    </dxg:GridControl.View>
+                </dxg:GridControl>
+            </dxdo:LayoutPanel>
+        </Grid>
+        </ScrollViewer>
+    
+</UserControl>

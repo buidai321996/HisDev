@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="DeveloperModules.Views.UC10"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+              xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+             xmlns:View="clr-namespace:DeveloperModules.Views"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <dxmvvm:Interaction.Behaviors>
+        <dxmvvm:NotificationService x:Name="ServiceWithDefaultNotifications" ApplicationId="sample_notification_app" PredefinedNotificationTemplate="ShortHeaderAndTwoTextFields"/>
+        <dx:DialogService DialogWindowStartupLocation="CenterOwner">
+            <dx:DialogService.ViewTemplate>
+                <DataTemplate>
+                    <View:RegistrationView/>
+                </DataTemplate>
+            </dx:DialogService.ViewTemplate>
+            <dx:DialogService.DialogStyle>
+                <Style TargetType="dx:DXDialogWindow">
+                    <Setter Property="Width" Value="600"/>
+                    <Setter Property="Height" Value="300"/>
+                </Style>
+            </dx:DialogService.DialogStyle>
+        </dx:DialogService>
+    </dxmvvm:Interaction.Behaviors>
+
+    
+        <Grid>
+            <dx:DXTabControl>
+                <dx:DXTabItem Header="견본 2" AllowHide="True" ShowToolTipForNonTrimmedHeader="True">
+
+                    <dxg:GridControl MaxHeight="900" VerticalAlignment="Top"  ItemsSource="{Binding   PersonList}" SelectionMode="MultipleRow" SelectedItem="{Binding PersonsData, Mode=OneWayToSource}">
+                        <dxg:GridColumn Width="*" Header="ID " FieldName="ID" Binding="{Binding ID,  UpdateSourceTrigger=PropertyChanged}"  ></dxg:GridColumn>
+                        <dxg:GridColumn Width="*" Header="Name " FieldName="Name" Binding="{Binding Name,  UpdateSourceTrigger=PropertyChanged}"></dxg:GridColumn>
+                        <dxg:GridColumn  Width="*" Header="Age" FieldName="Age" GroupIndex="0" Binding="{Binding Age,  UpdateSourceTrigger=PropertyChanged}"></dxg:GridColumn>
+                        <dxg:GridColumn Width="*" Header="ClassName " FieldName="ClassName" Binding="{Binding ClassName,  UpdateSourceTrigger=PropertyChanged}" ></dxg:GridColumn>
+                        <dxg:GridColumn Width="*"  Header="Description" FieldName="Description" Binding="{Binding Description,  UpdateSourceTrigger=PropertyChanged}"></dxg:GridColumn>
+                        <dxg:GridColumn Width="2*" Header="Task" >
+                            <dxg:GridColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" Width="Auto">
+                                        <dx:SimpleButton Width="60" Content="Delete" Command="{Binding Path=Column.DataContext.DeleteDelegateComand}" CommandParameter="{Binding RowData.Row}" ></dx:SimpleButton>
+                                        <dx:SimpleButton Width="60"  Content="Update" Command="{Binding Path=Column.DataContext.UpdateButtonDelegateComand}" CommandParameter="{Binding RowData.Row}" ></dx:SimpleButton>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </dxg:GridColumn.CellTemplate>
+                        </dxg:GridColumn>
+                        <dxg:GridControl.View>
+                            <dxg:TableView Name="view"
+                               AllowScrollAnimation="True"
+                               EditFormColumnCount="2" 
+                               EditFormShowMode="Inline"
+                               ShowGroupedColumns="True"
+                               NavigationStyle="Row"
+                               AllowBandMultiRow="False"
+                               ShowAutoFilterRow="True"
+                               ShowCheckBoxSelectorColumn="True"
+                               ShowGroupPanel="False"
+                               RowDetailsVisibilityMode="{Binding ExpandEnable}"
+                                AllowColumnFiltering="True">
+                                <dxb:BarManager.DXContextMenu>
+                                    <dxb:PopupMenu>
+                                        <dxb:PopupMenu.Items>
+                                            <dxb:BarButtonItem
+                                                Content="Update"
+                                                
+                                                Command="{Binding UpdateDelegateComand}"
+                                            
+                                                />
+                                            <dxb:BarButtonItem
+                                                Content="Delete"
+                                                 Glyph="{dx:DXImage Image=Cancel_16x16.png}"
+                                                Command="{Binding UpdateDelegateComand1}"
+                                            
+                                            />
+
+                                        </dxb:PopupMenu.Items>
+                                    </dxb:PopupMenu>
+                                </dxb:BarManager.DXContextMenu>
+
+
+                            </dxg:TableView>
+                        </dxg:GridControl.View>
+                    </dxg:GridControl>
+                </dx:DXTabItem>
+            </dx:DXTabControl>
+        </Grid>
+   
+
+</UserControl>

@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="DeveloperModules.Views.Test2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+              xmlns:local="clr-namespace:DeveloperModules.Views"
+             xmlns:dxdo="http://schemas.devexpress.com/winfx/2008/xaml/docking"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <UserControl.Resources>
+
+        <Style x:Key="PanelText" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="16,16,16,24" />
+            <Setter Property="Opacity" Value="0.5" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </UserControl.Resources>
+    <DockPanel>
+     
+        <dxb:BarManager>
+            <dxdo:DockLayoutManager x:Name="DemoDockContainer">
+                <dxdo:LayoutGroup Orientation="Horizontal" ItemHeight="Auto">
+                    <dxdo:LayoutGroup>
+                        <dxdo:LayoutPanel Name="Panel1" Caption="Panel1">
+                            <local:UC9></local:UC9>
+                        </dxdo:LayoutPanel>
+                    </dxdo:LayoutGroup>
+                    <dxdo:LayoutGroup Orientation="Vertical">
+                        <dxdo:LayoutGroup ItemHeight="4*">
+                            <dxdo:LayoutPanel Name="Panel" Caption="Panel1">
+                                <local:UC3></local:UC3>
+                            </dxdo:LayoutPanel>
+                            <dxdo:LayoutPanel Name="Panel2" Caption="Panel2">
+                                <local:UC4></local:UC4>
+                            </dxdo:LayoutPanel>
+                            <dxdo:LayoutPanel Name="Panel3" Caption="Panel3">
+                                <local:UC5></local:UC5>
+                            </dxdo:LayoutPanel>
+                            <dxdo:LayoutPanel Name="Panel4" Caption="Panel4">
+                                <local:UC6></local:UC6>
+                            </dxdo:LayoutPanel>
+                        </dxdo:LayoutGroup>
+                        <dxdo:LayoutGroup ItemHeight="2*">
+                            <dxdo:LayoutPanel Name="Panel5" Caption="Panel5" ItemHeight="2*">
+                                <local:UC7></local:UC7>
+                            </dxdo:LayoutPanel>
+                            <dxdo:LayoutPanel Name="Panel6" Caption="Panel5" ItemHeight="2*">
+                                <local:UC10></local:UC10>
+                            </dxdo:LayoutPanel>
+                        </dxdo:LayoutGroup>
+
+                    </dxdo:LayoutGroup>
+                </dxdo:LayoutGroup>
+                
+            </dxdo:DockLayoutManager>
+        </dxb:BarManager>
+    </DockPanel>
+</UserControl>
