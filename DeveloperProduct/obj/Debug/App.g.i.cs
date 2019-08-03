@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using DevExpress.Xpf.DXBinding;
 using DeveloperProduct;
 using Prism.Interactivity;
 using Prism.Interactivity.InteractionRequest;

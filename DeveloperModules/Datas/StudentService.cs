@@ -26,10 +26,10 @@ namespace DeveloperModules.Datas
             _repositoryStudent.SaveChanges();
         }
 
-        public List<Student> FindAll()
-        {
-            return _repositoryStudent.FindAll();
-        }
+        //public List<Student> FindAll()
+        //{
+        //    return _repositoryStudent.FindAll();
+        //}
 
         public int Remove(Student student)
         {

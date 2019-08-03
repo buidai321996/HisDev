@@ -19,7 +19,7 @@ namespace DeveloperModules.ViewModels
         public PatientInformationPopUpViewModel(IStudentService studentService)
         {
             _studentService = studentService;
-            PersonList = _studentService.FindAll();
+            //PersonList = _studentService.FindAll();
             CommandGridDoubleClick = new DelegateCommand(GridDoubleClick);
         }
 

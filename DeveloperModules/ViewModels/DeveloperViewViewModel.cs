@@ -24,7 +24,7 @@ namespace DeveloperModules.ViewModels
         public DeveloperViewViewModel(IStudentService studentService )
         {
             _studentService = studentService;
-            _developers = _studentService.FindAll();
+            //_developers = _studentService.FindAll();
         }
     }
 }

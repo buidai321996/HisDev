@@ -14,7 +14,7 @@ namespace Datas
 
 
 
-        List<TEntity> FindAll();
+        //List<TEntity> FindAll();
 
 
 

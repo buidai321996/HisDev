@@ -5,7 +5,7 @@ namespace DeveloperModules.Datas
 {
     public interface IStudentService
     {
-        List<Student> FindAll();
+        //List<Student> FindAll();
         int Remove(Student student);
         void AddOrUpdate(Student student);
 

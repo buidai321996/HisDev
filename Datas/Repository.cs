@@ -44,10 +44,10 @@ namespace Datas
         }
 
        
-        public List<TEntity> FindAll()
-        {
-            return DbSet.ToList();
-        }
+        //public List<TEntity> FindAll()
+        //{
+        //    return DbSet.ToList();
+        //}
 
         public Task<List<TEntity>> FindAllAsync()
         {

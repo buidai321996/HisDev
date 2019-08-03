@@ -7,55 +7,55 @@
              xmlns:local="clr-namespace:DeveloperModules.Views"
              xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
              xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-             prism:ViewModelLocator.AutoWireViewModel="True" Height="Auto" >
+             prism:ViewModelLocator.AutoWireViewModel="True" Height="Auto">
     <dxmvvm:Interaction.Behaviors>
         <dx:DialogService DialogWindowStartupLocation="CenterOwner">
             <dx:DialogService.ViewTemplate>
                 <DataTemplate>
-                    <local:RegistrationView/>
+                    <local:RegistrationView />
                 </DataTemplate>
             </dx:DialogService.ViewTemplate>
             <dx:DialogService.DialogStyle>
                 <Style TargetType="dx:DXDialogWindow">
-                    <Setter Property="Width" Value="Auto"/>
-                    <Setter Property="Height" Value="Auto"/>
+                    <Setter Property="Width" Value="Auto" />
+                    <Setter Property="Height" Value="Auto" />
                 </Style>
             </dx:DialogService.DialogStyle>
         </dx:DialogService>
     </dxmvvm:Interaction.Behaviors>
-    <DockPanel Height="Auto" >
-        <dx:DXTabControl >
+    <DockPanel Height="Auto">
+        <dx:DXTabControl>
             <dx:DXTabItem Header="Page 1" AllowHide="True">
                 <dxdo:DockLayoutManager Height="Auto">
-                    <dxdo:LayoutGroup Orientation="Vertical" ItemHeight="Auto" Height="Auto">
+                    <dxdo:LayoutGroup Orientation="Vertical" ItemHeight="Auto">
                         <dxdo:LayoutGroup>
                             <dxdo:LayoutPanel ShowCaption="False">
                                 <local:UC22></local:UC22>
                             </dxdo:LayoutPanel>
                         </dxdo:LayoutGroup>
-                        <dxdo:LayoutGroup Orientation="Horizontal" >
-                            <dxdo:LayoutGroup ShowCaption="False" Height="Auto" ItemHeight="Auto" >
-                                <dxdo:LayoutPanel  Caption="조하십시오."   >
+                        <dxdo:LayoutGroup Orientation="Horizontal">
+                            <dxdo:LayoutGroup ShowCaption="False" ItemHeight="Auto">
+                                <dxdo:LayoutPanel Caption="조하십시오.">
                                     <local:UC9></local:UC9>
-                                </dxdo:LayoutPanel >
+                                </dxdo:LayoutPanel>
                             </dxdo:LayoutGroup>
-                            <dxdo:LayoutGroup Orientation="Vertical" ItemHeight="Auto" Height="Auto" ItemWidth="4*" >
-                                <dxdo:LayoutGroup ItemHeight="Auto" Height="Auto">
-                                    <dxdo:LayoutPanel  Caption="조하십시오." ItemWidth="*" MinWidth="240" >
+                            <dxdo:LayoutGroup Orientation="Vertical" ItemWidth="4*" ItemHeight="Auto">
+                                <dxdo:LayoutGroup ItemHeight="Auto">
+                                    <dxdo:LayoutPanel Caption="조하십시오." ItemWidth="*" MinWidth="240">
                                         <local:UC3></local:UC3>
                                     </dxdo:LayoutPanel>
-                                    <dxdo:LayoutPanel Caption="한반도와 부" ItemWidth="*" MinWidth="240" >
+                                    <dxdo:LayoutPanel Caption="한반도와 부" ItemWidth="*" MinWidth="240">
                                         <local:UC4></local:UC4>
                                     </dxdo:LayoutPanel>
                                     
                                     <dxdo:LayoutPanel Caption="칭하게 되었다" ItemWidth="*" MinWidth="240">
                                         <local:Grid1></local:Grid1>
                                     </dxdo:LayoutPanel>
-                                    <dxdo:LayoutPanel  Caption="지역에서" ItemWidth="*" MinWidth="240">
+                                    <dxdo:LayoutPanel Caption="지역에서" ItemWidth="*" MinWidth="240">
                                         <local:UC6></local:UC6>
                                     </dxdo:LayoutPanel>
                                 </dxdo:LayoutGroup>
-                                <dxdo:LayoutGroup Orientation="Horizontal" DockPanel.Dock="Bottom" Height="Auto" ItemHeight="Auto">
+                                <dxdo:LayoutGroup Orientation="Horizontal" DockPanel.Dock="Bottom" ItemHeight="Auto">
 
                                     <dxdo:LayoutPanel ShowCaption="False">
                                         <local:UC7></local:UC7>
@@ -66,7 +66,7 @@
                                 </dxdo:LayoutGroup>
                             </dxdo:LayoutGroup>
                         </dxdo:LayoutGroup>
-                    </dxdo:LayoutGroup >
+                    </dxdo:LayoutGroup>
 
                 </dxdo:DockLayoutManager>
             </dx:DXTabItem>

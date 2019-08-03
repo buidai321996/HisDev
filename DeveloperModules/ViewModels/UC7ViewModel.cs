@@ -100,7 +100,7 @@ namespace DeveloperModules.ViewModels
             UpdateDelegateComand = new DelegateCommand(UpdateStudent);
             UpdateButtonDelegateComand = new DelegateCommand<Student>(UpdateButton);
             DeleteCommandPopup = new DelegateCommand(DeleteCommandPopup1);
-            PersonList = _studentService.FindAll().ToList();
+            //PersonList = _studentService.FindAll().ToList();
         }
 
         private void DeleteCommandPopup1()
@@ -120,26 +120,26 @@ namespace DeveloperModules.ViewModels
 
             INotification notification = _CustomtNotificationService.CreateCustomNotification(vm);
             notification.ShowAsync();
-            PersonList = _studentService.FindAll();
+            //PersonList = _studentService.FindAll();
         }
 
         private void UpdateButton(Student obj)
         {
             ShowRegistrationForm(obj);
-            PersonList = _studentService.FindAll();
+            //PersonList = _studentService.FindAll();
         }
 
         private void UpdateStudent()
         {
 
             ShowRegistrationForm(PersonsData);
-            PersonList = _studentService.FindAll();
+            //PersonList = _studentService.FindAll();
         }
 
         private void DeleteStudent(Student student)
         {
             _studentService.Remove(student);
-            PersonList = _studentService.FindAll();
+            //PersonList = _studentService.FindAll();
 
             //INotification notification = DefaultNotificationService.CreatePredefinedNotification("Remove thành Công",
             //    "aloso", String.Format("Second line. Time: {0}", DateTime.Now), null);

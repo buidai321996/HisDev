@@ -9,8 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using DeveloperModules.Vadilation;
-using DeveloperModules.Views;
+using DevExpress.Xpf.DXBinding;
 using Prism.Interactivity;
 using Prism.Interactivity.InteractionRequest;
 using Prism.Mvvm;
